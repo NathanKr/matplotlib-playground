@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-xpoints = np.array([0, 6])
-ypoints = np.array([0, 250])
+xpoints = np.arange(10)
+ypoints = xpoints ** 2
 
-plt.plot(xpoints, ypoints)
+plt.plot(xpoints, ypoints,'o')
 plt.title('plt x vs y')
 plt.xlabel("x")
 plt.ylabel("y")

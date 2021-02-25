@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-xpoints = np.array([0, 6])
-ypoints = np.array([0, 250])
+xpoints = np.arange(10)
+ypoints = xpoints ** 2
 
 #1. create a figure,like canvas
 fig = plt.figure() 
@@ -14,5 +14,5 @@ ax = fig.add_subplot(111) # (nrows, ncols, index)
 ax.set(title='plt x vs y',ylabel='y', xlabel='x')
 
 #4. do the plotting       
-ax.plot(xpoints, ypoints)
+ax.plot(xpoints, ypoints,'o')
 plt.show()
